@@ -1,13 +1,35 @@
-git init
-git remote add origin [gitLink]
-git remote -v
-git add .
-git commit -m "First commit"
-git branch -M main
+IF FIRST TIME
+open cmd
+1)git clone <url>
+2)cd .path
+3)code.   TO OPEN VS CODE
 
-git push origin main
+IF NOT FIRST TIME
+1)git add .
+2)git status   TO CHECK STATUS
+3)git commit -m "messagename"   LIKE A CHECK POINT
+4)git push
 
 
-in case for the first time
-git config user.name "someone"
-git config user.email "someone@someplace.com"
+PULL COMMAND
+1)git pull
+MERGE CONFLICT MAY OCCUR
+2)git commit -am "message name"    IF -am WE CAN SKIP add command 
+3)git push
+
+
+UNDO 
+1)git reset --hard <commit hash>
+
+BRANCHING
+
+1)git branch   TO CHECK THE CURRENT BRANCH WE ARE AT
+2)git checkout -b "name of branch"     TO ADD NEW BRANCH WE ADD -b
+3)git commit -am "messagename"
+
+to change branch we use git checkout nameofbranch
+
+MERGING BRANCH
+git merge nameofotherbranchtobemerged
+
+
